@@ -11,10 +11,6 @@ document.querySelector(".composer button").addEventListener("click", () => {
   }
 });
 
-document.body.addEventListener("click", (event) => {
-    console.log(event.target);
-  });
-
 function playSound(sound) {
   let audioElemnt = document.querySelector(`#s_${sound}`);
   let keyElemnt = document.querySelector(`div[data-key="${sound}"]`);
